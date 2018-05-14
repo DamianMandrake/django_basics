@@ -1,0 +1,20 @@
+
+{% extends "base.html" %}
+{% block title %} All Posts {% endblock title %}
+
+{% block content %}
+
+    This is {{ title }}<br/>
+    This contains<br>
+    {% for foo in queryset %}
+        <a href="{{ foo.url }}">{{  foo.title }}</a>  &nbsp;&nbsp;
+
+        <br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        {{ foo.content }}
+
+        <br/>
+
+    {% endfor %}
+
+{% endblock %}

@@ -1,0 +1,10 @@
+<ul class="messagelist">
+    {% for msg in messages %}
+        <li {% if msg.tags %} class ="{{ msg.tags }}"{% endif %}  >
+            msg
+        </li>
+        {% empty %}
+        <li> NO messages</li>
+    {% endfor %}
+
+</ul>
