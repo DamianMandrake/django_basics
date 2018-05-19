@@ -1,7 +1,7 @@
 from django.urls import path
 from django.conf.urls import url
-
 from posts.views import post_list, post_create, post_update, post_delete, post_detail
+
 
 urlpatterns = [
 
